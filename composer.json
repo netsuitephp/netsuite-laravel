@@ -1,0 +1,38 @@
+{
+  "name": "netsuitephp/netsuite-laravel",
+  "description": "NetSuite PHP laravel provider wrapper",
+  "keywords": [ "netsuite", "api", "php", "laravel" ],
+  "type": "library",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "James Gilliland (neclimdul)",
+      "email": "neclimdul@gmail.com"
+    },
+    {
+      "name": "Justin Rebelo (jrebs)",
+      "homepage": "https://github.com/jrebs"
+    }
+  ],
+  "require": {
+    "php": "^7.2.5|^8.0",
+    "ryanwinchester/netsuite-php": "*"
+  },
+  "require-dev": {
+    "illuminate/config": "^7|^8",
+    "illuminate/support": "^7|^8"
+  },
+  "autoload": {
+    "psr-4": {
+      "NetSuite\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "NetSuite\\Providers\\NetSuiteServiceProvider"
+      ]
+    }
+  }
+}
