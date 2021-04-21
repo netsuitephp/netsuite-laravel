@@ -22,6 +22,8 @@ composer require netsuitephp/netsuite-laravel
 
 By default, the configuration will assume you have your `$_ENV` populated
 with netsuite configuration keys laid out in the `netsuite-php` package.
+Read the included `config/netsuite.php` file as it is documented with inline
+comments.
 
 Go to
 [the netsuite-php quickstart](https://github.com/netsuitephp/netsuite-php#quickstart)
