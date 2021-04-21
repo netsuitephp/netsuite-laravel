@@ -32,7 +32,10 @@
     "laravel": {
       "providers": [
         "NetSuite\\Providers\\NetSuiteServiceProvider"
-      ]
+      ],
+      "aliases": {
+        "NetSuite": "NetSuite\\Facades\\NetSuite"
+      }
     }
   }
 }
