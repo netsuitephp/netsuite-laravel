@@ -9,7 +9,6 @@ return [
     'endpoint'  => env('NETSUITE_ENDPOINT', '2019_1'),
     'host'      => env('NETSUITE_HOST', 'https://webservices.netsuite.com'),
     'account'   => env('NETSUITE_ACCOUNT', ''),
-    'app_id'    => env('NETSUITE_APP_ID', ''),
 
     /*
     |--------------------------------------------------------------------------
@@ -36,15 +35,25 @@ return [
     'email'     => env('NETSUITE_EMAIL', ''),
     'password'  => env('NETSUITE_PASSWORD', ''),
     'role'      => env('NETSUITE_ROLE', ''),
+    'app_id'    => env('NETSUITE_APP_ID', ''),
 
     /*
     |--------------------------------------------------------------------------
-    | Other Optional Settings
+    | Logging
     |--------------------------------------------------------------------------
     | You can enable logging of all SOAP requests and responses and define
-    | log directory, as well as additional soap options.
+    | log directory.
     */
     'logging'       => env('NETSUITE_LOGGING', false),
     'log_path'      => env('NETSUITE_LOG_PATH', storage_path('logs')),
+
+    /*
+    |--------------------------------------------------------------------------
+    | SoapClient Options
+    |--------------------------------------------------------------------------
+    | You can define options to be passed into the underlying SoapClient.
+    | See https://www.php.net/manual/en/soapclient.construct.php for a list
+    | of options and their effects.
+    */
     'soap_options'  => [],
 ];
