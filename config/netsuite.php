@@ -21,7 +21,7 @@ return [
     */
     'consumerKey'           => env('NETSUITE_CONSUMER_KEY', ''),
     'consumerSecret'        => env('NETSUITE_CONSUMER_SECRET', ''),
-    'token'                 => env('NETSUITE_TOKEN', ''),
+    'token'                 => env('NETSUITE_TOKEN_KEY', ''),
     'tokenSecret'           => env('NETSUITE_TOKEN_SECRET', ''),
     'signatureAlgorithm'    => env('NETSUITE_HASH_TYPE', 'sha256'),
 
