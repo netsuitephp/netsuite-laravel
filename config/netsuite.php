@@ -44,8 +44,10 @@ return [
     | You can enable logging of all SOAP requests and responses and define
     | log directory.
     */
-    'logging'       => env('NETSUITE_LOGGING', false),
-    'log_path'      => env('NETSUITE_LOG_PATH', storage_path('logs')),
+    'logging'           => env('NETSUITE_LOGGING', false),
+    'log_path'          => env('NETSUITE_LOG_PATH', storage_path('logs')),
+    'log_format'        => env('NETSUITE_LOG_FORMAT'),
+    'log_dateformat'    => env('NETSUITE_LOG_DATEFORMAT'),
 
     /*
     |--------------------------------------------------------------------------
