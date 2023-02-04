@@ -45,12 +45,14 @@ class NetSuiteServiceProvider extends ServiceProvider
         $this->app->singleton(NetSuiteService::class, function ($app) {
                 $config = config('netsuite');
                 $svcConfig = [
-                    'endpoint'  => $config['endpoint'],
-                    'host'      => $config['host'],
-                    'account'   => $config['account'],
-                    'app_id'    => $config['app_id'],
-                    'logging'   => $config['logging'],
-                    'log_path'  => $config['log_path'],
+                    'endpoint'          => $config['endpoint'],
+                    'host'              => $config['host'],
+                    'account'           => $config['account'],
+                    'app_id'            => $config['app_id'],
+                    'logging'           => $config['logging'],
+                    'log_path'          => $config['log_path'],
+                    'log_format'        => $config['log_format'],
+                    'log_dateformat'    => $config['log_dateformat'],
                 ];
                 // Prefer token-based auth, per NetSuite recommendations
                 if ($config['token']) {
