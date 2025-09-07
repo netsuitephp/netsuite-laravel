@@ -1,5 +1,5 @@
 {
-  "name": "mgriego/netsuite-laravel",
+  "name": "netsuitephp/netsuite-laravel",
   "description": "NetSuite PHP laravel provider wrapper",
   "keywords": [ "netsuite", "api", "php", "laravel" ],
   "type": "library",
@@ -27,7 +27,7 @@
       "NetSuite\\": "src/"
     }
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "extra": {
     "laravel": {
       "providers": [
