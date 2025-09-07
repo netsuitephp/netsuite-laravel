@@ -1,5 +1,5 @@
 {
-  "name": "netsuitephp/netsuite-laravel",
+  "name": "mgriego/netsuite-laravel",
   "description": "NetSuite PHP laravel provider wrapper",
   "keywords": [ "netsuite", "api", "php", "laravel" ],
   "type": "library",
@@ -19,8 +19,8 @@
     "ryanwinchester/netsuite-php": "*"
   },
   "require-dev": {
-    "illuminate/config": "^7|^8",
-    "illuminate/support": "^7|^8"
+    "illuminate/config": "^7|^8|^9|^10|^11|^12",
+    "illuminate/support": "^7|^8|^9|^10|^11|^12"
   },
   "autoload": {
     "psr-4": {
